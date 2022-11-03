@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import 'jest';
+import '@testing-library/jest-dom';
 import { InputBox } from './InputBox';
 
 describe('Tests in InputBox component', () => { 
@@ -19,8 +19,6 @@ describe('Tests in InputBox component', () => {
     test('should show the input in textarea tag.', () => { 
 
         render(<InputBox inputText={inputText} setInput={setInputText} />);
-
-        // screen.debug();
 
         const textarea = screen.getByRole('textbox');
 
