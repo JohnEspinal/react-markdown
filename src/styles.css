@@ -1,0 +1,36 @@
+body{
+    padding: 0px;
+}
+
+#inputBox{
+    float: left;
+    width: 40%;
+    height: 100vh;
+    margin: 0%;
+}
+
+#outputArea{
+    float: right;
+    margin-top: 10px;
+    padding: 5px;
+    width: 55%;
+    height: 100vh;
+    border: solid black 1px;
+    font-size: 20px;
+    word-wrap: break-word
+}
+
+textarea{
+    margin-right: 5%;
+    width: 95%;
+    height: 95%;
+    font-size: 20px;
+}
+
+#appHeader{
+    margin: 0px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    width: 100%;
+}

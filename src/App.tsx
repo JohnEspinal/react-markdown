@@ -1,7 +1,23 @@
+import { useState } from "react";
+import { InputBox } from "./components/InputBox";
+import { OutputBox } from "./components/OutputBox";
+import './styles.css';
+
+
 function App() {
+
+  const [inputText, setInputText] = useState('');
+
   return (
     <div>
-      <textarea onChange={(e) => console.log(e.target.value)} rows={5} />
+      <h1 id="appHeader">
+        Markdown Live Preview
+      </h1>
+
+        <InputBox inputText={inputText} setInput={setInputText} />
+
+        <OutputBox inputText={inputText} />
+      
     </div>
   );
 }
